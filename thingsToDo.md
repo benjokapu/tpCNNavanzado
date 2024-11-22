@@ -2,7 +2,7 @@ Models:
 - Senquential (DONE)
 - VGG16 (DONE)
 - VGG19 BENJO
-- AleNet GABI
+- AleNet (DONE)
 - LeNet BENJO
 - ResNet GABI
 
