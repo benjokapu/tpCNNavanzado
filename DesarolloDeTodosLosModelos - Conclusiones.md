@@ -22,6 +22,8 @@ La parte de normalización fue otro tema importante. Para ayudar con la estabili
 
 En cuanto a la parte de pooling, porbamos con MaxPooling de 3x3(es bastante común) pero lo importante era el stride, que decidimos ajustar para reducir las dimensiones de la imagen de manera efectiva sin perder demasiada información. Los resultados en este aspecto fueron muy buenos, porque las imágenes se redujeron a las dimensiones correctas para pasar a las capas densas al final.
 
+Tuvimos un problema grave, el modelo no predice ciertas frutas porque no tiene suficientes datos para entrenar, por lo que no puede generalizar bien. 
+
 Añadimos Dropout para evitar el sobreajuste. A la hora de elegir el optimizador, usamos el optimizador SGD (Stochastic Gradient Descent) con una tasa de aprendizaje de 0.01 y momentum de 0.9. Para la parte de las etiquetas, trabajamos con el one-hot encoding, porque las clases eran mutuamente excluyentes, y convertimos tanto el conjunto de entrenamiento como el de prueba con la función to_categorical de Keras. 
 
 
